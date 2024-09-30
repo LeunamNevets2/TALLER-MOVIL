@@ -1,0 +1,43 @@
+fun main() {
+	cumpleManuel()
+    //cumpleManuel1()
+    
+    val gretinh = cumpleManuel1()
+    println (gretinh)
+    
+    println (cumpleManuel2("pepito"))
+    
+    println (cumpleManuel3("pepito",25))
+    
+    println(cumpleManuel3(name = "prueba", age = 213))
+    
+    println(cumpleManuel4(age = 213))
+}
+
+fun cumpleManuel(){
+    println("Happy Birthday, Manuel!")
+    println("You are now 23 years old!") 
+}
+
+fun cumpleManuel1(): String {
+    val nameGreeting = "Happy Birthday, Manuel!"
+    val ageGreeting = "You are now 23 years old!"
+   return "$nameGreeting\n$ageGreeting"
+}
+
+fun cumpleManuel2(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+fun cumpleManuel3(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+//valor predeterminado 
+fun cumpleManuel4(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
